@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* This program is a malloc exemple, read 3 integers numbers and do a dinamic save, and print all values */
+/* This program is a malloc exemple, read 3 integers numbers and do a dynamic save, and print all values */
 
 int main(int argc, char *argv[]){
 	int *t,i;
@@ -13,6 +13,6 @@ int main(int argc, char *argv[]){
 	for(i=0;i<3;i++){
 		printf("\n%d",t[i]);
 	}
-	free(*t);
+	free(t);
 	return 0;
 }
